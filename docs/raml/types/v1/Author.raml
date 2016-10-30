@@ -1,0 +1,15 @@
+#%RAML 1.0 DataType
+description: Author object
+type: object
+properties:
+  id:
+    required: true
+    type: integer
+  name:
+    required: true
+    type: string
+  gender:
+    type: string
+    enum: [ "male", "female" ]
+  country: string
+  books: object[]

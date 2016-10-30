@@ -1,0 +1,15 @@
+#%RAML 1.0
+title: Mimir core API
+types:
+  Book: !include types/v1/Book.raml
+  Author: !include types/v1/Author.raml
+version: v1
+protocols: [ HTTP, HTTPS ]
+baseUri: /v1/
+/books/list:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/v1/books.list.get.raml
