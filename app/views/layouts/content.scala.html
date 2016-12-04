@@ -1,0 +1,16 @@
+<div class="col-sm-12">
+    <div class="panel panel-warning new-books">
+        <div class="panel-heading">
+            <h4>Последние поступления</h4>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                @for(item <- Array(1,2,3,4)) {
+                    <div class="col-sm-3">
+                        @book.item_simple.render()
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

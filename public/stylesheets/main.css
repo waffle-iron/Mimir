@@ -1,0 +1,13 @@
+.new-books .item img.book-image {
+    max-height: 250px !important;
+}
+
+.new-books a.more-link {
+    color: #f0ad4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-books a.more-link:hover {
+    text-decoration: underline;
+}
