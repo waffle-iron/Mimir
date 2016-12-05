@@ -11,3 +11,7 @@
 .new-books a.more-link:hover {
     text-decoration: underline;
 }
+
+img.book-mini {
+    max-width: 50px;
+}

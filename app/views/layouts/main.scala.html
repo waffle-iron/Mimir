@@ -9,15 +9,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <header>
-    @layouts.header.render(title)
+    @common.header.render(title)
     </header>
     <body>
         <div class="wrapper container-fluid">
-            @layouts.top.render()
-            <div class="row">
-                @layouts.content.render()
-            </div>
-            @layouts.footer.render()
+            @common.top.render()
+            @content
+            @common.footer.render()
         </div>
     </body>
 </html>
